@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Food Delivery App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Menu -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/80" alt="User Avatar" class="user-avatar">
+                    <h5>Welcome, User</h5>
+                    <p class="small">user@example.com</p>
+                    <div class="user-status">
+                        <span class="status-dot online"></span>
+                        Online
+                    </div>
+                </div>
+
+                <!-- System Features -->
+                <div class="menu-section">
+                    <h3>System Features</h3>
+                    <a href="/stock-detection.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-box-open"></i></span>
+                        <span class="menu-text">Stock Detection</span>
+                    </a>
+                    <a href="/connection-status.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-wifi"></i></span>
+                        <span class="menu-text">Connection Status</span>
+                    </a>
+                    <a href="/payment-security.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-shield-alt"></i></span>
+                        <span class="menu-text">Payment Security</span>
+                    </a>
+                    <a href="/card-protection.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-credit-card"></i></span>
+                        <span class="menu-text">Card Protection</span>
+                    </a>
+                </div>
+
+                <!-- Customer Purchase Section -->
+                <div class="menu-section">
+                    <h3>Customer Purchase</h3>
+                    <a href="/shopping-cart.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="menu-text">Shopping Cart</span>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="/payment.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-wallet"></i></span>
+                        <span class="menu-text">Payment</span>
+                    </a>
+                    <a href="/order-status.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-check-circle"></i></span>
+                        <span class="menu-text">Order Status</span>
+                    </a>
+                </div>
+
+                <!-- Food Browse Section -->
+                <div class="menu-section">
+                    <h3>Food Browse</h3>
+                    <a href="/restaurant.html" class="menu-item">
+                    <a href="restaurant.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-utensils"></i></span>
+                        <span class="menu-text">Restaurants</span>
+                    </a>
+                    <a href="menu.html" class="menu-item active">
+                        <span class="icon-container"><i class="fas fa-list"></i></span>
+                        <span class="menu-text">Menu</span>
+                    </a>
+                </div>
+
+                <!-- Rider Operations Section -->
+                <div class="menu-section">
+                    <h3>Rider Operations</h3>
+                    <a href="rider-login.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-user-check"></i></span>
+                        <span class="menu-text">Rider Login</span>
+                    </a>
+                    <a href="pickup-code.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-qrcode"></i></span>
+                        <span class="menu-text">Pick-up Code</span>
+                    </a>
+                    <a href="track-order.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="menu-text">Track Order</span>
+                    </a>
+                </div>
+
+                <!-- Support Section -->
+                <div class="menu-section">
+                    <h3>Support</h3>
+                    <a href="customer-service.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-headset"></i></span>
+                        <span class="menu-text">Customer Service</span>
+                    </a>
+                    <a href="policies.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-book"></i></span>
+                        <span class="menu-text">Policies</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-md-9 col-lg-10 main-content">
+                <!-- Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h1><i class="fas fa-list"></i> Menu</h1>
+                        <p class="text-muted">Browse our delicious offerings</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="search-bar">
+                            <input type="text" class="form-control" placeholder="Search menu items...">
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-filter"></i> Filter
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Menu Categories -->
+                <div class="menu-categories mb-4">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <button class="btn btn-outline-primary active">All</button>
+                        <button class="btn btn-outline-primary">Popular</button>
+                        <button class="btn btn-outline-primary">Appetizers</button>
+                        <button class="btn btn-outline-primary">Main Course</button>
+                        <button class="btn btn-outline-primary">Sushi</button>
+                        <button class="btn btn-outline-primary">Desserts</button>
+                        <button class="btn btn-outline-primary">Beverages</button>
+                    </div>
+                </div>
+
+                <!-- Menu Items Grid -->
+                <div class="row g-4">
+                    <!-- Menu Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-item-card">
+                            <img src="https://via.placeholder.com/300x200" alt="California Roll" class="menu-item-image">
+                            <div class="menu-item-info">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <span class="cuisine-type">Sushi</span>
+                                        <h4>California Roll</h4>
+                                        <p class="description">Fresh crab meat, avocado, and cucumber wrapped in seaweed and rice</p>
+                                    </div>
+                                    <span class="price">$12.99</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.8 (120)</span>
+                                    </div>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-item-card">
+                            <img src="https://via.placeholder.com/300x200" alt="Spicy Tuna Roll" class="menu-item-image">
+                            <div class="menu-item-info">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <span class="cuisine-type">Sushi</span>
+                                        <h4>Spicy Tuna Roll</h4>
+                                        <p class="description">Fresh tuna mixed with spicy sauce, wrapped in seaweed and rice</p>
+                                    </div>
+                                    <span class="price">$14.99</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.7 (98)</span>
+                                    </div>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="menu-item-card">
+                            <img src="https://via.placeholder.com/300x200" alt="Miso Soup" class="menu-item-image">
+                            <div class="menu-item-info">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <span class="cuisine-type">Appetizer</span>
+                                        <h4>Miso Soup</h4>
+                                        <p class="description">Traditional Japanese soup with tofu, seaweed, and green onions</p>
+                                    </div>
+                                    <span class="price">$3.99</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <span>4.6 (156)</span>
+                                    </div>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More Menu Items -->
+                    <!-- Add more menu items following the same structure -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

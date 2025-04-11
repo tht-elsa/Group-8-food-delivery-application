@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status - Food Delivery App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Menu -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/80" alt="User Avatar" class="user-avatar">
+                    <h5>Welcome, User</h5>
+                    <p class="small">user@example.com</p>
+                    <div class="user-status">
+                        <span class="status-dot online"></span>
+                        Online
+                    </div>
+                </div>
+
+                <!-- System Features -->
+                <div class="menu-section">
+                    <h3>System Features</h3>
+                    <a href="stock-detection.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-box-open"></i></span>
+                        <span class="menu-text">Stock Detection</span>
+                    </a>
+                    <a href="connection-status.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-wifi"></i></span>
+                        <span class="menu-text">Connection Status</span>
+                    </a>
+                    <a href="payment-security.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-shield-alt"></i></span>
+                        <span class="menu-text">Payment Security</span>
+                    </a>
+                    <a href="card-protection.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-credit-card"></i></span>
+                        <span class="menu-text">Card Protection</span>
+                    </a>
+                </div>
+
+                <!-- Customer Purchase Section -->
+                <div class="menu-section">
+                    <h3>Customer Purchase</h3>
+                    <a href="shopping-cart.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="menu-text">Shopping Cart</span>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="payment.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-wallet"></i></span>
+                        <span class="menu-text">Payment</span>
+                    </a>
+                    <a href="order-status.html" class="menu-item active">
+                        <span class="icon-container"><i class="fas fa-check-circle"></i></span>
+                        <span class="menu-text">Order Status</span>
+                    </a>
+                </div>
+
+                <!-- Food Browse Section -->
+                <div class="menu-section">
+                    <h3>Food Browse</h3>
+                    <a href="restaurant.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-utensils"></i></span>
+                        <span class="menu-text">Restaurants</span>
+                    </a>
+                    <a href="menu.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-list"></i></span>
+                        <span class="menu-text">Menu</span>
+                    </a>
+                </div>
+
+                <!-- Rider Operations Section -->
+                <div class="menu-section">
+                    <h3>Rider Operations</h3>
+                    <a href="rider-login.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-user-check"></i></span>
+                        <span class="menu-text">Rider Login</span>
+                    </a>
+                    <a href="pickup-code.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-qrcode"></i></span>
+                        <span class="menu-text">Pick-up Code</span>
+                    </a>
+                    <a href="track-order.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="menu-text">Track Order</span>
+                    </a>
+                </div>
+
+                <!-- Support Section -->
+                <div class="menu-section">
+                    <h3>Support</h3>
+                    <a href="customer-service.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-headset"></i></span>
+                        <span class="menu-text">Customer Service</span>
+                    </a>
+                    <a href="policies.html" class="menu-item">
+                        <span class="icon-container"><i class="fas fa-book"></i></span>
+                        <span class="menu-text">Policies</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-md-9 col-lg-10 main-content">
+                <div class="header">
+                    <h1><i class="fas fa-check-circle"></i> Order Status</h1>
+                    <p class="text-muted">Track your current and past orders</p>
+                </div>
+
+                <!-- Current Order Section -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Current Order #12345</h5>
+                        <span class="badge bg-warning">In Progress</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- Order Progress -->
+                        <div class="order-progress mb-4">
+                            <div class="progress-step completed">
+                                <div class="step-icon">
+                                    <i class="fas fa-receipt"></i>
+                                </div>
+                                <div class="step-label">Order Placed</div>
+                                <div class="step-time">2:30 PM</div>
+                            </div>
+                            <div class="progress-step completed">
+                                <div class="step-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="step-label">Confirmed</div>
+                                <div class="step-time">2:35 PM</div>
+                            </div>
+                            <div class="progress-step active">
+                                <div class="step-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="step-label">Preparing</div>
+                                <div class="step-time">2:40 PM</div>
+                            </div>
+                            <div class="progress-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-motorcycle"></i>
+                                </div>
+                                <div class="step-label">On the Way</div>
+                            </div>
+                            <div class="progress-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="step-label">Delivered</div>
+                            </div>
+                        </div>
+
+                        <!-- Order Details -->
+                        <div class="order-details">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Order Items</h6>
+                                    <div class="order-items">
+                                        <div class="order-item d-flex justify-content-between">
+                                            <span>1x California Roll</span>
+                                            <span>$12.99</span>
+                                        </div>
+                                        <div class="order-item d-flex justify-content-between">
+                                            <span>2x Miso Soup</span>
+                                            <span>$7.98</span>
+                                        </div>
+                                        <div class="order-item d-flex justify-content-between">
+                                            <span>1x Green Tea</span>
+                                            <span>$2.99</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Total</strong>
+                                        <strong>$23.96</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Delivery Details</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> 123 Main St, City, Country</p>
+                                    <p><i class="fas fa-user"></i> John Doe</p>
+                                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                                    <p><i class="fas fa-motorcycle"></i> Rider: Michael (4.8 ★)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Past Orders -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Past Orders</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date</th>
+                                        <th>Items</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#12344</td>
+                                        <td>2024-01-20</td>
+                                        <td>Spicy Tuna Roll, Edamame</td>
+                                        <td>$18.99</td>
+                                        <td><span class="badge bg-success">Delivered</span></td>
+                                        <td><button class="btn btn-sm btn-outline-primary">Reorder</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#12343</td>
+                                        <td>2024-01-19</td>
+                                        <td>Chicken Teriyaki, Rice</td>
+                                        <td>$15.99</td>
+                                        <td><span class="badge bg-success">Delivered</span></td>
+                                        <td><button class="btn btn-sm btn-outline-primary">Reorder</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 
